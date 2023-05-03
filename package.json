@@ -1,0 +1,30 @@
+{
+  "name": "rs-ts-1",
+  "version": "1.0.0",
+  "description": "Tesk task for Result School TypeScript course",
+  "private": true,
+  "scripts": {
+    "start": "webpack serve --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Axent13/rs-ts-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Axent13/rs-ts-1/issues"
+  },
+  "homepage": "https://github.com/Axent13/rs-ts-1#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.1",
+    "style-loader": "^3.3.2",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4",
+    "webpack": "^5.81.0",
+    "webpack-cli": "^5.0.2",
+    "webpack-dev-server": "^4.13.3"
+  }
+}

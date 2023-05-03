@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("./fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+.header {
+  margin-top: 1rem;
+  font-family: "Roboto-Bold";
+  font-weight: bold;
+  text-align: center;
+  font-size: 3rem;
+}

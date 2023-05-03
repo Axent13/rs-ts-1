@@ -4,7 +4,10 @@
   "description": "Tesk task for Result School TypeScript course",
   "private": true,
   "scripts": {
-    "start": "webpack serve --open"
+    "build": "webpack --mode=development",
+    "start": "webpack serve --open",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -20,6 +23,7 @@
   "devDependencies": {
     "css-loader": "^6.7.3",
     "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.1",
     "style-loader": "^3.3.2",
     "ts-loader": "^9.4.2",

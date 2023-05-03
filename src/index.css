@@ -15,10 +15,129 @@ html {
   font-size: 16px;
 }
 
+body {
+  background-color: bisque;
+}
+
+.background {
+  height: 100vh;
+  width: 100%;
+  transition: all 0.3s ease;
+  background: darkkhaki center/cover;
+}
+
+.sunny-bg {
+  background: url("./assets/summer-bg.jpg") no-repeat center/cover;
+}
+
+.rainy-bg {
+  background: url("./assets/rainy-bg.jpg") no-repeat center/cover;
+}
+
+.winter-bg {
+  background: url("./assets/winter-bg.jpg") no-repeat center/cover;
+}
+
+.blur {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(0.4em);
+  height: 100vh;
+  width: 100%;
+}
+
 .header {
-  margin-top: 1rem;
+  padding-top: 2rem;
   font-family: "Roboto-Bold";
   font-weight: bold;
   text-align: center;
   font-size: 3rem;
+  opacity: 0.5;
+  text-shadow: 0 0 1rem black;
+}
+
+.cards {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.card {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 3rem;
+  border: solid 0.2rem #ccc;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 0px rgba(68, 68, 68, 0.466);
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card:active {
+  transform: scale(1.05);
+}
+
+.card-sunny {
+  background: url("./assets/icons/sun.svg") no-repeat center/30%,
+    url("./assets/summer-bg.jpg") no-repeat center/cover;
+}
+
+.card-rainy {
+  background: url("./assets/icons/cloud-rain.svg") no-repeat center/30%,
+    url("./assets/rainy-bg.jpg") no-repeat center/cover;
+}
+
+.card-winter {
+  background: url("./assets/icons/cloud-snow.svg") no-repeat center/30%,
+    url("./assets/winter-bg.jpg") no-repeat center/cover;
+}
+
+.volume-container {
+  margin: 3rem auto;
+  width: 15rem;
+}
+
+.volume {
+  border-radius: 0.2rem;
+  background: #e0e0e0;
+  height: 0.5rem;
+  position: relative;
+}
+
+.volume-filled {
+  border-radius: 0.2rem;
+  background: blue;
+  height: 0.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 50%;
+}
+
+.thumb {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  position: relative;
+  left: 45%;
+  transform: translateY(-25%);
+  background: blue;
+  cursor: pointer;
+}
+
+.volume-value {
+  margin-top: 1rem;
+  font-family: "Roboto-Bold";
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+  text-shadow: 0 0 2rem black;
+  transition: opacity 0.5s ease;
+}
+
+.volume-value_hidden {
+  opacity: 0;
 }

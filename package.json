@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Axent13/rs-ts-1#readme",
   "devDependencies": {
     "css-loader": "^6.7.3",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.1",
     "style-loader": "^3.3.2",
     "ts-loader": "^9.4.2",
